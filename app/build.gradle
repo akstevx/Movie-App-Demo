@@ -29,6 +29,10 @@ android {
 
     }
 
+    configurations.all {
+        exclude module: 'okhttp-ws'
+    }
+
     buildFeatures {
         viewBinding true
     }
@@ -75,7 +79,8 @@ dependencies {
     //Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
-    implementation 'com.squareup.okhttp3:okhttp:4.2.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.8.0'
+    implementation 'com.squareup.okhttp3:okhttp-ws:3.4.1'
     implementation "com.squareup.okhttp3:logging-interceptor:$versions.retrofitLoggerVersion"
     implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2'
 
@@ -110,6 +115,10 @@ dependencies {
     //Timber
     implementation "com.jakewharton.timber:timber:$versions.timberVersion"
 
+    //Test Dependencies
+    testImplementation "com.squareup.okhttp3:mockwebserver:$versions.mockwebserverVersion"
+    androidTestImplementation "com.squareup.okhttp3:mockwebserver:$versions.mockwebserverVersion"
+    testImplementation 'org.mockito:mockito-inline:2.21.0'
 
     testImplementation "org.mockito:mockito-core:$versions.mockito"
     testImplementation "androidx.test.ext:junit-ktx:$versions.junit_ext"

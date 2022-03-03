@@ -14,7 +14,7 @@ buildscript {
             'liveDataVersion': '2.4.0',
             'roomVersion': '2.4.0',
             'pagingVersion': '2.1.0',
-
+            'mockwebserverVersion' : '4.8.0',
             'mockitoAllVersion' : '1.10.19',
             'mockitoAndroidVersion' : '2.25.0'
     ]
