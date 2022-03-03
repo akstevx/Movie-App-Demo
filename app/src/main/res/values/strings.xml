@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Movies App Demo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_demo_name">Movie Clip</string>
+    <string name="logo_subtext">View the latest, trending and upcoming\n movie clips</string>
+    <string name="home">Home</string>
+    <string name="fav">favourites</string>
+    <string name="settings">settings</string>
+    <string name="dummy_overview">Buddy is a young boy on the cusp of adolescence, whose life is filled with familial love, childhood hijinks, and a blossoming romance. Yet, with his beloved hometown caught up in increasing turmoil, his family faces a momentous choice: hope the conflict will pass or leave everything they know behind for a new life.</string>
+    <string name="dummy_title">Belfast</string>
+    <string name="dummy_popularity">popularity: 76.602</string>
+    <string name="clear_app_data">App data has been cleared</string>
+    <string name="clear_data">Clear App Data</string>
+    <string name="vote_count">Vote count: 8613</string>
+    <string name="vote_average">Vote average: 8.3</string>
+    <string name="_return">Return</string>
+    <string name="popularity">Popularity:</string>
+    <string name="release_date_2021_11_24">Release date: 2021-11-24</string>
+</resources>

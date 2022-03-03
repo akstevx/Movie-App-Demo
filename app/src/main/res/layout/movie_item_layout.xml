@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--        <variable-->
+<!--            name="movie"-->
+<!--            type="com.example.moviesappdemo.model.Result" />-->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="375dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        app:cardCornerRadius="@dimen/_16dp"
+        android:background="@drawable/gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@drawable/gradient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/ivMoviePoster"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/_8dp"
+                android:layout_marginTop="@dimen/_8dp"
+                app:layout_constraintBottom_toTopOf="@+id/txtMovieTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/ivLike"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="@dimen/_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.95"
+                app:srcCompat="@drawable/fav_border_ic"
+                app:tint="@color/primaryColor" />
+
+            <ImageView
+                android:id="@+id/ivUnLike"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="@dimen/_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.95"
+                android:visibility="gone"
+                app:srcCompat="@drawable/like_ic" />
+
+
+            <Button
+                android:id="@+id/btnLike"
+                android:layout_width="@dimen/_48dp"
+                android:layout_height="@dimen/_48dp"
+                android:background="@color/space_transparent"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/ivLike"
+                app:layout_constraintEnd_toEndOf="@+id/ivLike"
+                app:layout_constraintStart_toStartOf="@+id/ivLike"
+                app:layout_constraintTop_toTopOf="@+id/ivLike" />
+
+            <TextView
+                android:id="@+id/txtMovieTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/dummy_title"
+                android:textAllCaps="true"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/text_xmedium"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/btnLike"
+                app:layout_constraintEnd_toStartOf="@+id/txtMoviePopularity"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txtMovieDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="2"
+                android:textSize="@dimen/text_xsmall"
+                android:text="@string/dummy_overview"
+                android:textColor="@color/primaryColor"
+                app:layout_constraintEnd_toStartOf="@+id/btnLike"
+                app:layout_constraintStart_toStartOf="@+id/txtMovieTitle"
+                app:layout_constraintTop_toBottomOf="@+id/txtMovieTitle" />
+
+            <TextView
+                android:id="@+id/txtMoviePopularity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dummy_popularity"
+                android:textColor="@color/text_fade_color"
+                android:textSize="@dimen/text_xsmall"
+                app:layout_constraintBaseline_toBaselineOf="@+id/txtMovieTitle"
+                app:layout_constraintEnd_toEndOf="@+id/ivLike" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

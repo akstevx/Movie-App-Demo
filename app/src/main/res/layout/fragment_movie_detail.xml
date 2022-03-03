@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReturn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height2"
+            android:layout_marginStart="@dimen/_32dp"
+            android:layout_marginEnd="@dimen/_32dp"
+            android:text="@string/_return"
+            android:textAllCaps="false"
+            app:cornerRadius="@dimen/_4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtReleaseDate" />
+
+        <TextView
+            android:id="@+id/txtMoviePopularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:text="@string/dummy_popularity"
+            android:textColor="@color/text_fade_color"
+            android:textSize="@dimen/text_xsmall"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMovieDesc" />
+
+        <TextView
+            android:id="@+id/txtMovieVoteCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="@string/vote_count"
+            android:textColor="@color/text_fade_color"
+            android:textSize="@dimen/text_xsmall"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtMoviePopularity"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/txtMovieDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginEnd="24dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/dummy_overview"
+            android:textColor="@color/primaryColor"
+            android:textSize="@dimen/text_xsmall"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMovieTitle" />
+
+        <TextView
+            android:id="@+id/txtMovieTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/dummy_title"
+            android:textAllCaps="true"
+            android:textColor="@color/primaryColor"
+            android:textSize="@dimen/text_xmedium"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txtReleaseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:text="@string/release_date_2021_11_24"
+            android:textColor="@color/text_fade_color"
+            android:textSize="@dimen/text_xsmall"
+            app:layout_constraintStart_toStartOf="@+id/txtMoviePopularity"
+            app:layout_constraintTop_toBottomOf="@+id/txtMoviePopularity" />
+
+        <TextView
+            android:id="@+id/txtMovieVoteAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vote_average"
+            android:textColor="@color/text_fade_color"
+            android:textSize="@dimen/text_xsmall"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtReleaseDate"
+            app:layout_constraintEnd_toEndOf="@+id/txtMovieVoteCount" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
