@@ -25,7 +25,6 @@ class TrendingMoviesFragment : Fragment() {
     private var isConnected: Boolean = true
     private val adapter = MoviesAdapter()
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

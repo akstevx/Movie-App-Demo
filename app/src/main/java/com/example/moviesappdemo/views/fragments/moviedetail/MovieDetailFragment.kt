@@ -17,7 +17,7 @@ import com.example.moviesappdemo.util.extensions.loadImage
 class MovieDetailFragment : Fragment() {
     private var _binding: FragmentMovieDetailBinding? = null
     private val binding get() = _binding!!
-    private val args : MovieDetailFragmentArgs by navArgs()
+    private val args: MovieDetailFragmentArgs by navArgs()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
